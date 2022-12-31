@@ -1,14 +1,6 @@
 from PIL import Image
-import win32api
-import win32con
 import keyboard
-import mouse
 import clipboard
-def getpos():
-    return win32api.GetCursorPos()
-def clickxy(x,y):
-    win32api.SetCursorPos((x,y))
-    mouse.click('left')
 from time import sleep
 from os.path import dirname,realpath
 p=dirname(realpath(__file__))+"\\"
@@ -22,9 +14,6 @@ end
 """
 cmds = [start]*22
 proc=0
-#draw color 255 255 255 255 0 0
-#draw rect 40 40 1 1 0 0
-#drawflush display1
 x,y=0,175
 pixel=0
 for (r, g, b) in data:
@@ -45,4 +34,3 @@ for i in range(22):
     while not keyboard.is_pressed('esc'): 
         pass
     sleep(0.6)
-   
