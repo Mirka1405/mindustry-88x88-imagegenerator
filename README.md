@@ -4,7 +4,7 @@
 How to make an image:
 
 1. Download Python, if you haven't already (https://www.python.org/downloads/)
-2. Run "pip install keyboard" in shell (only tested on windows)
+2. Run "pip install keyboard" and "pip install clipboard" in shell (only tested on windows)
 3. Download and run the script
 4. Choose an image (has to be located in same folder as script)
 5. Copy the schematic.txt into schematic menu in game, then build the schematic
